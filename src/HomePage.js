@@ -1,11 +1,13 @@
 import React from 'react';
+import {Link } from "react-router-dom";
+
 import Card from './shared/Card'
 
 const HomePage = () => {
-  const  props = {width:'251px',height:'352px',border:'black'};
   return (<main>
-    <Card {...props}/>
-    <Card {...props}/>
+    <header>Home Page...</header>
+    <Link to="/startGame"><Card title="Start Game"/></Link>
+    <Link to="/howToPlay"><Card  title="How To Play"/></Link>
   </main>)
 }
 
